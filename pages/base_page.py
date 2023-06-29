@@ -72,7 +72,6 @@ class BasePageClass:
         x = self.browser.find_element(*var)
         x.click()
         time.sleep(2)
-        #self.browser.close()
         self.browser.back()
 
     def click_link_two(self, var):
