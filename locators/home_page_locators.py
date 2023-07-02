@@ -7,7 +7,7 @@ class HomePageLocatorsLinks:
     BATTON_VISUALISIROVATb_STRUCTURU = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[3]/div/div/div[2]/div[2]/div[1]/div/a')
     BATTON_SOZDATb_IZ_SHABLONA = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[3]/div/div/div[3]/div/div[2]/a')
     BATTON_SOZDATb_S_NOLJA = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[3]/div/div/div[4]/div/div[2]/a')
-    BATTON_GOD_MESJAC = (By.XPATH, '//*[@id="tariffs"]/div/div/div[1]/div[1]/div/div/div')
+    BATTON_GOD_MESJAC = (By.XPATH, '//*[@id="tariffs"]/div/div/div[1]/div[1]/div/div/div/span[2]')
     BATTON_NACHATb_PROBNII = (By.XPATH, '//*[@id="tariffs"]/div/div/div[2]/div[1]/div[1]/div/div/a')
     BATTON_PODCLUCHITb_FREELANCER = (By.XPATH, '//*[@id="tariffs"]/div/div/div[2]/div[2]/div[1]/div[2]/div/a')
     BATTON_PODCLUCHITb_COMANDA = (By.XPATH, '//*[@id="tariffs"]/div/div/div[2]/div[3]/div[1]/div[2]/div/a')
@@ -15,7 +15,7 @@ class HomePageLocatorsLinks:
 
     LINK_HOW_WORK_KRAULER_1 = (By.XPATH, '//*[@id="header"]/nav/menu/ul/div[2]/li/a')
     LINK_TARIFI_1 = (By.XPATH, '//*[@id="header"]/nav/menu/ul/div[3]/li/a')
-    LINK_BLOG_1 = (By.XPATH, '//*[@id="header"]/nav/menu/ul/div[4]/li/a')
+    LINK_BLOG_HEADER = (By.XPATH, '//*[@id="header"]/nav/menu/ul/div[4]/li/a')
     LINK_ONAS_VCRU = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[2]/div/div[2]/div[2]/div[2]/a[1]')
     LINK_ONAS_TG = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[2]/div/div[2]/div[2]/div[2]/a[2]')
     LINK_ONAS_VK = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[2]/div/div[2]/div[2]/div[2]/a[3]')
@@ -40,7 +40,7 @@ class HomePageLocatorsLinks:
     LINK_NIZ_CASE = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[2]/div[1]/ul/div[4]/li/a')
     LINK_CONFIDENC = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[2]/div[3]/a[1]')
     LINK_POLZOVAT_SOGLAS = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[2]/div[3]/a[2]')
-    LINK_PRINCIP_RABOTI_KRAULERA = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[3]/div/div/div[2]/div[3]/div[2]/a/span[1]')
+    LINK_PRINCIP_RABOTI_KRAULERA = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[2]/div[1]/ul/div[2]/li/a')
     LINK_HOW_WORK_KRAULER_HEAD = (By.XPATH, '//*[@id="header"]/nav/menu/ul/div[2]/li/a')
 
     LINK_VIDEO_WORK = (By.XPATH, '//*[@id="__next"]/div/div[2]/div/section[2]/div/div[1]/div[1]')
