@@ -54,6 +54,7 @@ def test_click_link_home_page(browser):
     page_home.click_link(HPL.LINK_NIZ_BLOG, L.page_blog)
     time.sleep(1)
     page_home.click_link(HPL.LINK_NIZ_CASE, 'https://structura.app/blog?slug=%D0%9A%D0%B5%D0%B9%D1%81%D1%8B')
+    time.sleep(1)
     page_home.click_link(HPL.LINK_NIZ_HOW_WORK_KRAULER, L.page_how_work_krauler)
     time.sleep(1)
     page_home.click_link(HPL.LINK_NIZ_TARIFI, L.link_tarifs)
