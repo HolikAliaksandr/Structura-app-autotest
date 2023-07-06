@@ -11,3 +11,4 @@ class Links:
     link_tarifs = 'https://structura.app/#tariffs'
     link_politica_confid = 'https://structura.app/api/uploads/ISA_OOO_Politika_konfidenczialnosti_dlya_servisa_27_05_2021_g_1eb642fc13.pdf'
     link_polsovat_soglas = 'https://structura.app/api/uploads/ISA_OOO_Liczenzionnoe_solashenie_oferta_27_05_2021_g_34423e7d01.pdf'
+    page_konstructor = "https://app.structura.app/editor"

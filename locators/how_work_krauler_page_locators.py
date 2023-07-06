@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 class HowWorkKrauPageLocators:
-     BATTON_NACHATb_BESPLATNO = (By.XPATH, '//*[@id="header"]/nav/a')
+    BATTON_NACHATb_BESPLATNO = (By.XPATH, '//*[@id="header"]/nav/a')
     BATTON_VISUALISIROVATb_STRUCTURU = (By.XPATH, '//*[@id="__next"]/div/div[2]/div[2]/div/div[1]/div[1]/div/a')
     LINK_HOME_PAGE = (By.XPATH, '//*[@id="header"]/nav/div[2]/div[2]/span')
     LINK_SITEMAPS_1 = (By.XPATH, '//*[@id="__next"]/div/div[2]/div[1]/div/div[2]/div[5]/div[2]/div/a[1]')
@@ -19,3 +19,4 @@ class HowWorkKrauPageLocators:
     LINK_TELEGRAMM = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[1]/div[3]/a[1]')
     LINK_YOUTUBE = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[1]/div[3]/a[2]')
     LINK_VK = (By.XPATH, '//*[@id="__next"]/div/div[2]/section/div/div[1]/div[3]/a[3]')
+

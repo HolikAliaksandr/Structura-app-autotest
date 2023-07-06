@@ -17,7 +17,7 @@ class BasePageClass:
         self.browser = browser
         self.url = url
         self.browser.implicitly_wait(timeout)
-
+        # self.browser.set_window_size(1200, 800)
 
 
     def how_work_outer_link(self, var):
