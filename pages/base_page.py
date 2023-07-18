@@ -112,3 +112,4 @@ class BasePageClass:
         if url is None:
             url = self.browser.current_url
         return url
+

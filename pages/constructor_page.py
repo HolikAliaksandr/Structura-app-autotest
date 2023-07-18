@@ -46,7 +46,7 @@ class ConstructorPageClass(BasePageClass):
         clickable = self.browser.find_element(By.TAG_NAME, 'textarea')
         clickable.click()
 
-    def muve_cursor_to_elements(self, loc, x):
+    def move_cursor_to_elements(self, loc, x):
         hoverable = self.browser.find_elements(*loc)[x]
         ActionChains(self.browser).scroll_to_element(hoverable)
         ActionChains(self.browser) \
@@ -77,3 +77,33 @@ class ConstructorPageClass(BasePageClass):
         delete = self.browser.find_element(By.XPATH, "//span[text()='Удалить проект']")
         delete.click()
 
+    def add_new_area_in_element(self, x):
+        # №div в открытом проекте 7- имя проекта, 8-13-троеточие верх справа, 15-16- описание проекта, 17- "домой" слева
+        # 18- + масштаб, 20- - масштаб, 22-24 +новый блок в элементе 34 - add...37-add 42-44-add futer 39-41-шапка
+        # 37 in 1 elem - name,
+
+        for i in range(x):
+            num = (i-1)*4
+            area_plus = self.browser.find_elements(By.TAG_NAME, 'div')[22] # 22,
+            area_plus.click()
+            time.sleep(1)
+            in_element_plus = self.browser.find_elements(By.TAG_NAME, 'div')[44+num] # 40, 44
+            in_element_plus.click()
+            time.sleep(1)
+        button_save = self.browser.find_elements(By.TAG_NAME, 'button')[1]
+        button_save.click()
+        time.sleep(1)
+
+
+        # pozic_1 = self.browser.find_elements(*var)[z]
+        # pozic_2 = self.browser.find_elements(*var)[z-1]
+        # action = ActionChains(self.browser)
+        # action.click_and_hold(pozic_1).pause(1).move_to_element(pozic_2).release(pozic_1).perform()
+
+        # area1 = self.browser.find_elements(By.CLASS_NAME, 'editInput')[0] # main text
+        # area2 = self.browser.find_elements(By.CLASS_NAME, 'editInput')[1] # 2 text
+        # area2.click()
+        # area2.send_keys(' 333')
+        # area1.click()
+
+        # time.sleep(3)

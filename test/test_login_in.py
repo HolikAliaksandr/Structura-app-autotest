@@ -12,26 +12,18 @@ from locators.login_locators import LoginPageLocators as Log
 import time
 
 
-
 @pytest.mark.smoke
 @pytest.mark.regression
-def test_in_with_email(browser):
+def test_login_with_email(browser):
     link = Links.page_login
     page_login = LoginPageClass(browser, link, 1)
     page_login.open()
-
     time.sleep(1)
 
     page_login.input_email('aliaksandr.holik@gmail.com')
     page_login.click_voiti()
     time.sleep(1)
     browser.save_screenshot('no_passw.png')
-
-
-    #alert_obj = driver.switch_to.alert
-    # msg = alert_obj.text()
-    # print(msg)
-    # time.sleep(2)
 
     page_login.clear_email()
     page_login.input_password('Test123456')
@@ -40,10 +32,29 @@ def test_in_with_email(browser):
     browser.save_screenshot('no_email.png')
     time.sleep(1)
 
-
     page_login.input_email('aliaksandr.holik@gmail.com')
     page_login.click_voiti()
     time.sleep(1)
     browser.save_screenshot('validation_in.png')
     # time.sleep(1)
 
+@pytest.mark.smoke
+@pytest.mark.regression
+def test_log_out(browser):
+    link = Links.page_login
+    page_login = LoginPageClass(browser, link, 1)
+    page_login.open()
+
+    time.sleep(1)
+    page_login.input_email('aliaksandr.holik@gmail.com')
+    page_login.input_password('Test123456')
+    page_login.click_voiti()
+
+    page_login.click_button(Log.BUTTON_3_TOCHKI)
+    time.sleep(1)
+
+    page_login.click_profile()
+    time.sleep(1)
+
+    page_login.click_button(Log.BUTTON_LOG_OUT_OF_PROFILE)
+    browser.save_screenshot('logout.png')
